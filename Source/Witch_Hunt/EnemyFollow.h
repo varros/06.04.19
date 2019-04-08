@@ -7,7 +7,7 @@
 #include "EnemyFollow.generated.h"
 
 UCLASS()
-class WITCHHUNT_04_API AEnemyFollow : public AActor
+class WITCHHUNT_API AEnemyFollow : public AActor
 {
 	GENERATED_BODY()
 	

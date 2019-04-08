@@ -23,4 +23,20 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY()
+		USceneComponent* Root;
+
+	UPROPERTY(EditAnywhere)
+		UStaticMeshComponent* Mesh;
+
+	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = "true"))
+		AActor *goal;
+
+	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = "true"))
+		float speed;
+
+	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = "true"))
+		float accuracy;
+
+
 };

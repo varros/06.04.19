@@ -7,7 +7,7 @@
 // Sets default values
 AEnemyFollow::AEnemyFollow()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
@@ -22,7 +22,7 @@ AEnemyFollow::AEnemyFollow()
 void AEnemyFollow::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
@@ -43,7 +43,6 @@ void AEnemyFollow::Tick(float DeltaTime)
 	FVector direction = goal_location - enemy_location;
 
 	SetActorLocation(
-		GetActorLocation() + direction.GetUnsafeNormal() * speed * DeltaTime); 
+		GetActorLocation() + direction.GetUnsafeNormal() * speed * DeltaTime);
 
 }
-
